@@ -6,6 +6,7 @@ import Content from "./components/Content";
 
 function App() {
   const [items, setItems] = React.useState([]);
+  const [startDate, setStartDate] = React.useState(new Date());
 
   React.useEffect(() => {
     try {
@@ -24,9 +25,12 @@ function App() {
       <Header />
       <div className="wrapper">
         <div className="content">
-          <Content items={items} />
+          <Content
+            items={items}
+            startDate={startDate}
+          />
         </div>
-          <Footer />
+        <Footer />
       </div>
     </div>
   );
