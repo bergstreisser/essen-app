@@ -7,6 +7,7 @@ import Content from "./components/Content";
 function App() {
   const [items, setItems] = React.useState([]);
   const [date, setDate] = React.useState({});
+  const [plan, setPlanVisible] = React.useState(false);
 
   React.useEffect(() => {
     try {
@@ -24,7 +25,7 @@ function App() {
     try {
       //schreiben in MockApi
       setDate(obj);
-      alert(obj);
+      alert(date);
     } catch (error) {
       alert('hinzufügen nicht geklappt...');
       console.error(error);
@@ -34,7 +35,9 @@ function App() {
 
   return (
     <div>
-      <Header />
+      <Header
+        plan={plan}
+      />
       <div className="wrapper">
         <div className="content">
           <Content
