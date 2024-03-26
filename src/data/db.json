@@ -1,0 +1,31 @@
+[
+    {
+      "id": "1",
+      "bezeichnung": "Spaghetti",
+      "beschreibung": "Die leckersten Nuddeln der Welt",
+      "url": "/img/spaghetti.jpg",
+      "alt": "Spaghetti"
+    },
+    {
+      "id": "2",
+      "bezeichnung": "Milchreis",
+      "beschreibung": "Sehr lecker und gesund",
+      "url": "img/milchreis.jpg",
+      "alt": "Reis"
+    },
+    {
+      "id": "3",
+      "bezeichnung": "Teigtaschen",
+      "beschreibung": "Sehr lecker",
+      "url": "img/teigtaschen.jpg",
+      "alt": "Reis"
+    },
+    {
+      "id": "4",
+      "bezeichnung": "Pfankuchen",
+      "beschreibung": "Sehr lecker mit Milchmädchen",
+      "url": "img/pfankuchen.jpg",
+      "alt": "Reis"
+    }
+
+  ]
