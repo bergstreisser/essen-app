@@ -6,7 +6,7 @@ import Content from "./components/Content";
 
 function App() {
   const [items, setItems] = React.useState([]);
-  const [startDate, setStartDate] = React.useState(new Date());
+  const [date, setDate] = React.useState({});
 
   React.useEffect(() => {
     try {
@@ -20,6 +20,18 @@ function App() {
     }
   }, []);
 
+  const selectDate = (obj) => {
+    try {
+      //schreiben in MockApi
+      setDate(obj);
+      alert(obj);
+    } catch (error) {
+      alert('hinzufügen nicht geklappt...');
+      console.error(error);
+    }
+
+  }
+
   return (
     <div>
       <Header />
@@ -27,7 +39,7 @@ function App() {
         <div className="content">
           <Content
             items={items}
-            startDate={startDate}
+            selectDate={selectDate}
           />
         </div>
         <Footer />

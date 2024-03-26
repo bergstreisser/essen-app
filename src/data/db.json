@@ -2,120 +2,140 @@
     {
       "id": "1",
       "bezeichnung": "Spaghetti",
+      "beschreibung": "...",
       "url": "img/spaghetti.jpg",
       "alt": "Spaghetti"
     },
     {
       "id": "2",
       "bezeichnung": "Milchreis",
+      "beschreibung": "...",
       "url": "img/milchreis.jpg",
       "alt": "Reis"
     },
     {
       "id": "3",
       "bezeichnung": "Pilemeni",
+      "beschreibung": "...",
       "url": "img/pilemeni.jpg",
       "alt": "Pilemeni"
     },
     {
       "id": "4",
       "bezeichnung": "Oladi",
+      "beschreibung": "...",
       "url": "img/oladi.jpg",
       "alt": "Oladi"
     },
     {
       "id": "5",
       "bezeichnung": "Kartoffelauflauf",
+      "beschreibung": "...",
       "url": "img/kartoffelauflauf.jpg",
       "alt": "Kartoffel"
     },
     {
       "id": "6",
       "bezeichnung": "Lachs",
+      "beschreibung": "...",
       "url": "img/lachs.jpg",
       "alt": "Lachs"
     },
     {
       "id": "7",
       "bezeichnung": "Hähnchen",
+      "beschreibung": "...",
       "url": "img/hähnchen.jpg",
       "alt": "Hähnchen"
     },
     {
       "id": "8",
       "bezeichnung": "Sandwich",
+      "beschreibung": "...",
       "url": "img/sandwich.jpg",
       "alt": "Sandwich"
     },
     {
       "id": "9",
       "bezeichnung": "Pfannkuchen",
+      "beschreibung": "...",
       "url": "img/pfannkuchen.jpg",
       "alt": "Reis"
     },
     {
       "id": "10",
       "bezeichnung": "Plow",
+      "beschreibung": "...",
       "url": "img/plow.jpg",
       "alt": "Plow"
     },
     {
       "id": "11",
       "bezeichnung": "Pizza",
+      "beschreibung": "...",
       "url": "img/pizza.jpg",
       "alt": "Pizza"
     },
     {
       "id": "12",
       "bezeichnung": "Pomfrit",
+      "beschreibung": "...",
       "url": "img/pomfrit.jpg",
       "alt": "Pomfrit"
     },
     {
       "id": "13",
       "bezeichnung": "Pute",
+      "beschreibung": "...",
       "url": "img/pute.jpg",
       "alt": "Pute"
     },
     {
       "id": "14",
       "bezeichnung": "Geschnetzeltes",
+      "beschreibung": "...",
       "url": "img/geschnetzeltes.jpg",
       "alt": "geschnetzeltes"
     },
     {
       "id": "15",
       "bezeichnung": "Hamburger",
+      "beschreibung": "...",
       "url": "img/hamburger.jpg",
       "alt": "Hamburger"
     },
     {
       "id": "16",
       "bezeichnung": "Linsensuppe",
+      "beschreibung": "...",
       "url": "img/linsensuppe.jpg",
       "alt": "Linsensuppe"
     },
     {
       "id": "17",
       "bezeichnung": "Brokkolisuppe",
+      "beschreibung": "...",
       "url": "img/brokkolisuppe.jpg",
       "alt": "Brokkolisuppe"
     },
     {
       "id": "18",
       "bezeichnung": "Spätzle",
+      "beschreibung": "...",
       "url": "img/spätzle.jpg",
       "alt": "Spätzle"
     },
     {
       "id": "19",
       "bezeichnung": "Lasagne",
+      "beschreibung": "...",
       "url": "img/lasagne.jpg",
       "alt": "Lasagne"
     },
     {
       "id": "20",
       "bezeichnung": "Kürbissuppe",
+      "beschreibung": "...",
       "url": "img/kürbissuppe.jpg",
       "alt": "Kürbissuppe"
     }
