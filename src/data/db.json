@@ -2,30 +2,122 @@
     {
       "id": "1",
       "bezeichnung": "Spaghetti",
-      "beschreibung": "Die leckersten Nuddeln der Welt",
-      "url": "/img/spaghetti.jpg",
+      "url": "img/spaghetti.jpg",
       "alt": "Spaghetti"
     },
     {
       "id": "2",
       "bezeichnung": "Milchreis",
-      "beschreibung": "Sehr lecker und gesund",
       "url": "img/milchreis.jpg",
       "alt": "Reis"
     },
     {
       "id": "3",
-      "bezeichnung": "Teigtaschen",
-      "beschreibung": "Sehr lecker",
-      "url": "img/teigtaschen.jpg",
-      "alt": "Reis"
+      "bezeichnung": "Pilemeni",
+      "url": "img/pilemeni.jpg",
+      "alt": "Pilemeni"
     },
     {
       "id": "4",
-      "bezeichnung": "Pfankuchen",
-      "beschreibung": "Sehr lecker mit Milchmädchen",
-      "url": "img/pfankuchen.jpg",
+      "bezeichnung": "Oladi",
+      "url": "img/oladi.jpg",
+      "alt": "Oladi"
+    },
+    {
+      "id": "5",
+      "bezeichnung": "Kartoffelauflauf",
+      "url": "img/kartoffelauflauf.jpg",
+      "alt": "Kartoffel"
+    },
+    {
+      "id": "6",
+      "bezeichnung": "Lachs",
+      "url": "img/lachs.jpg",
+      "alt": "Lachs"
+    },
+    {
+      "id": "7",
+      "bezeichnung": "Hähnchen",
+      "url": "img/hähnchen.jpg",
+      "alt": "Hähnchen"
+    },
+    {
+      "id": "8",
+      "bezeichnung": "Sandwich",
+      "url": "img/sandwich.jpg",
+      "alt": "Sandwich"
+    },
+    {
+      "id": "9",
+      "bezeichnung": "Pfannkuchen",
+      "url": "img/pfannkuchen.jpg",
       "alt": "Reis"
+    },
+    {
+      "id": "10",
+      "bezeichnung": "Plow",
+      "url": "img/plow.jpg",
+      "alt": "Plow"
+    },
+    {
+      "id": "11",
+      "bezeichnung": "Pizza",
+      "url": "img/pizza.jpg",
+      "alt": "Pizza"
+    },
+    {
+      "id": "12",
+      "bezeichnung": "Pomfrit",
+      "url": "img/pomfrit.jpg",
+      "alt": "Pomfrit"
+    },
+    {
+      "id": "13",
+      "bezeichnung": "Pute",
+      "url": "img/pute.jpg",
+      "alt": "Pute"
+    },
+    {
+      "id": "14",
+      "bezeichnung": "Geschnetzeltes",
+      "url": "img/geschnetzeltes.jpg",
+      "alt": "geschnetzeltes"
+    },
+    {
+      "id": "15",
+      "bezeichnung": "Hamburger",
+      "url": "img/hamburger.jpg",
+      "alt": "Hamburger"
+    },
+    {
+      "id": "16",
+      "bezeichnung": "Linsensuppe",
+      "url": "img/linsensuppe.jpg",
+      "alt": "Linsensuppe"
+    },
+    {
+      "id": "17",
+      "bezeichnung": "Brokkolisuppe",
+      "url": "img/brokkolisuppe.jpg",
+      "alt": "Brokkolisuppe"
+    },
+    {
+      "id": "18",
+      "bezeichnung": "Spätzle",
+      "url": "img/spätzle.jpg",
+      "alt": "Spätzle"
+    },
+    {
+      "id": "19",
+      "bezeichnung": "Lasagne",
+      "url": "img/lasagne.jpg",
+      "alt": "Lasagne"
+    },
+    {
+      "id": "20",
+      "bezeichnung": "Kürbissuppe",
+      "url": "img/kürbissuppe.jpg",
+      "alt": "Kürbissuppe"
     }
-
+    
   ]

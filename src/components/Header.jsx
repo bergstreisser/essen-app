@@ -5,7 +5,7 @@ function Header(props) {
         <header>
             <div className="welcome">
                 <img className="logo" src="/img/logo.png" alt="Logo" />
-                <h1>Essenplanner</h1>
+                <h1>Menüplaner</h1>
             </div>
         </header>
     );

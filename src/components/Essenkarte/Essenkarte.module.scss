@@ -1,7 +1,8 @@
 .essenkarte {
     border: 1px solid #73453ee1;
-    padding: 20px;
-    margin-right: 50px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 30px;
     width: 155px;
     border-radius: 5px;
 
@@ -9,5 +10,21 @@
         font-weight: 400;
         font-size: 14px;
     }
+
+    p {
+        font-size: 15px;
+    }
 }
 
+.buchen {
+    display: flex;
+    justify-content: space-between;
+}
+
+.add {
+    margin-right: 10px;
+    margin-top: 10px;
+    width: 27px;
+    height: 27px;
+    cursor: pointer;
+}

@@ -4,7 +4,7 @@ function Footer() {
     return (
         <footer>
             <div className="footer">
-                <h5>Essenplanner für die ganze Familie...</h5>
+                <h4>Menüplaner für die ganze Familie...</h4>
             </div>
         </footer>
     );
