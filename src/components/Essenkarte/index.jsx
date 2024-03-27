@@ -1,12 +1,11 @@
 import React from "react";
 import styles from './Essenkarte.module.scss';
+import Calendar from "react-calendar";
 
 function Essenkarte({ id, bezeichnung, beschreibung, url, alt, setDate }) {
 
-    const onClickDate = () => {
-        //Datum übergeben
-        const newDate = new Date();
-        setDate(newDate);
+    const onClickDate = date => {
+        //setDate(date);
     }
 
     const onClickBeschreibung = () => {
@@ -20,10 +19,11 @@ function Essenkarte({ id, bezeichnung, beschreibung, url, alt, setDate }) {
             <div className={styles.buchen}>
                 <p>Essen buchen:</p>
                 <img onClick={onClickDate} className={styles.add} src="/img/add.png" alt="add" />
+                {/* <Calendar onChange={setDate} /> */}
             </div>
         </div>
 
-        
+
     );
 }
 

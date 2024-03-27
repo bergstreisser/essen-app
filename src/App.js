@@ -1,13 +1,14 @@
 import React from "react";
 import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Plan from "./components/Plan";
 import data from './data/db.json';
 import Content from "./components/Content";
 
 function App() {
   const [items, setItems] = React.useState([]);
-  const [date, setDate] = React.useState({});
-  const [plan, setPlanVisible] = React.useState(false);
+  const [date, setDate] = React.useState(new Date());
+  const [planVisible, setPlanVisible] = React.useState(false);
+  const [contentVisible, setContentVisible] = React.useState(true);
 
   React.useEffect(() => {
     try {
@@ -25,27 +26,21 @@ function App() {
     try {
       //schreiben in MockApi
       setDate(obj);
-      alert(date);
+      alert(obj);
     } catch (error) {
       alert('hinzufügen nicht geklappt...');
       console.error(error);
     }
-
   }
 
   return (
     <div>
-      <Header
-        plan={plan}
-      />
+      <Header onClickPlan={(plan) => setPlanVisible(plan)} onClickContent={(content) => setContentVisible(content)} />
       <div className="wrapper">
         <div className="content">
-          <Content
-            items={items}
-            selectDate={selectDate}
-          />
+          {contentVisible && <Content items={items} selectDate={selectDate} />}
+          {planVisible && <Plan />}
         </div>
-        <Footer />
       </div>
     </div>
   );

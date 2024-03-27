@@ -1,15 +1,21 @@
 import React from 'react';
 
-function Header(plan) {
+function Header(props, isPlanVisible = true, isContentVisible = false) {
 
-    const onClickBurger = () => {
-        alert('Hier wird der Wochenplan angezeigt...');
+    const [planVisible, setPlanVisible] = React.useState(isPlanVisible);
+    const [contentVisible, setContentVisible] = React.useState(isContentVisible);
+
+    const changeVisibility = () => {
+        setPlanVisible(!planVisible);
+        setContentVisible(!contentVisible);
+        props.onClickPlan(planVisible);
+        props.onClickContent(contentVisible);
     }
 
     return (
         <header>
             <div className="welcome">
-                <img onClick={onClickBurger} className="logo" src="/img/logo.png" alt="Logo" />
+                <img onClick={changeVisibility} className="logo" src="/img/logo.png" alt="Logo" />
                 <h1>Menü-planer</h1>
             </div>
         </header>
