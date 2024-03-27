@@ -35,7 +35,10 @@ function App() {
 
   return (
     <div>
-      <Header onClickPlan={(plan) => setPlanVisible(plan)} onClickContent={(content) => setContentVisible(content)} />
+      <Header
+        onClickPlan={(visible) => setPlanVisible(visible)}
+        onClickContent={(visible) => setContentVisible(visible)}
+      />
       <div className="wrapper">
         <div className="content">
           {contentVisible && <Content items={items} selectDate={selectDate} />}

@@ -1,9 +1,9 @@
 import React from 'react';
 
-function Header(props, isPlanVisible = true, isContentVisible = false) {
+function Header(props) {
 
-    const [planVisible, setPlanVisible] = React.useState(isPlanVisible);
-    const [contentVisible, setContentVisible] = React.useState(isContentVisible);
+    const [planVisible, setPlanVisible] = React.useState(true);
+    const [contentVisible, setContentVisible] = React.useState(false);
 
     const changeVisibility = () => {
         setPlanVisible(!planVisible);
