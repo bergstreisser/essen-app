@@ -5,7 +5,7 @@ import moment from 'moment';
 import 'moment/locale/de'  
 //import 'react-calendar/dist/Calendar.css';
 
-function Essenkarte({ id, bezeichnung, beschreibung, url, alt, setDate }) {
+function Essenkarte({ id, bezeichnung, beschreibung, url, alt, setDate, setBezeichnung }) {
 
     const [cardVisible, setCardVisible] = React.useState(true);
     const [calendarVisible, setCalendarVisible] = React.useState(false);
@@ -17,6 +17,7 @@ function Essenkarte({ id, bezeichnung, beschreibung, url, alt, setDate }) {
     const changeVisibility = () => {
         setCardVisible(!cardVisible);
         setCalendarVisible(!calendarVisible);
+        setBezeichnung(bezeichnung);
     }
 
     return (
@@ -25,7 +26,7 @@ function Essenkarte({ id, bezeichnung, beschreibung, url, alt, setDate }) {
                 {cardVisible && <img onClick={onClickBeschreibung} className={styles.image} src={url} width={155} height={135} alt={alt} />}
                 {cardVisible && <h4><u>{bezeichnung}</u></h4>}
                 {calendarVisible && <Calendar className={styles.calendar}
-                    onChange={setDate}
+                    onChange={setDate} 
                     prev2Label={""}
                     next2Label={""}
                     prevLabel={"«"}

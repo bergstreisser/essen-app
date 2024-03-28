@@ -3,6 +3,9 @@ import Header from "./components/Header";
 import Plan from "./components/Plan";
 import data from './data/db.json';
 import Content from "./components/Content";
+import axios from 'axios';
+import moment from 'moment';
+import 'moment/locale/de' 
 
 function App() {
   const [items, setItems] = React.useState([]);
@@ -24,13 +27,17 @@ function App() {
 
   const selectDate = (obj) => {
     try {
-      //schreiben in MockApi
-      setDate(obj);
-      alert(obj);
+      const buchung = moment(obj).local('de').format('DD MMM YYYY');
+      axios.post('https://6605dd29d92166b2e3c2ec69.mockapi.io/date', buchung);
+      alert("Buchung erfolgreich: " + buchung);
     } catch (error) {
-      alert('hinzufügen nicht geklappt...');
+      alert('Buchung nicht geklappt...');
       console.error(error);
     }
+  }
+
+  const selectBezeichnung = (bez) => {
+    axios.post('https://6605dd29d92166b2e3c2ec69.mockapi.io/menue', bez);
   }
 
   return (
@@ -41,7 +48,7 @@ function App() {
       />
       <div className="wrapper">
         <div className="content">
-          {contentVisible && <Content items={items} selectDate={selectDate} />}
+          {contentVisible && <Content items={items} selectDate={selectDate} selectBezeichnung={selectBezeichnung} />}
           {planVisible && <Plan />}
         </div>
       </div>
