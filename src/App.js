@@ -28,11 +28,11 @@ function App() {
     }
   }, []);
 
-  const essenBuchen = (dateObj, bez) => {
+  const essenBuchen = (dateObj, bezeichnung, url, alt) => {
     try {
       const datum = moment(dateObj).local('de').format('DD MMM YYYY');
       const heute = moment(new Date()).local('de').format('DD MMM YYYY');
-      const menue = { datum, bez };
+      const menue = { datum, bezeichnung, url, alt };
 
       if (datum < heute) {
         sweetalert({
@@ -42,14 +42,14 @@ function App() {
       });
       } else {
         sweetalert({
-          title: "»" + bez + "« buchen?",
+          title: "»" + bezeichnung + "« buchen?",
           text: "Datum: " + datum,
           icon: "warning",
           buttons: true,
           dangerMode: true,
         }).then((willDelete) => {
           if (willDelete) {
-            sweetalert(bez + " für den " + datum + " gebucht", {
+            sweetalert(bezeichnung + " für den " + datum + " gebucht", {
               icon: "success",
             });
             axios.post('https://6605dd29d92166b2e3c2ec69.mockapi.io/menue', menue);
@@ -71,7 +71,7 @@ function App() {
       <div className="wrapper">
         <div className="content">
           {contentVisible && <Content items={items} essenBuchen={essenBuchen} />}
-          {planVisible && <Plan bestellungen={bestellungen} />}
+          {planVisible && <Plan bestellungen={bestellungen} setBestellungen={setBestellungen} />}
         </div>
       </div>
     </div>

@@ -6,7 +6,7 @@ import 'moment/locale/de'
 import sweetalert from 'sweetalert';
 //import 'react-calendar/dist/Calendar.css';
 
-function Essenkarte({ id, bezeichnung, beschreibung, url, alt, buchen }) {
+function Essenkarte({ bezeichnung, beschreibung, url, alt, buchen }) {
 
     const [cardVisible, setCardVisible] = React.useState(true);
     const [calendarVisible, setCalendarVisible] = React.useState(false);
@@ -26,7 +26,7 @@ function Essenkarte({ id, bezeichnung, beschreibung, url, alt, buchen }) {
     }
 
     const essenBestellen = (obj) => {
-        buchen(obj, bezeichnung);
+        buchen(obj, bezeichnung, url, alt);
     }
 
     return (

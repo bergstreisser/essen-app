@@ -10,7 +10,7 @@ function Content({ items, essenBuchen }) {
                 beschreibung={item.beschreibung}
                 url={item.url}
                 alt={item.alt}
-                buchen={(dateObj, item) => essenBuchen(dateObj, item)}
+                buchen={(dateObj, bezeichnung, url, alt) => essenBuchen(dateObj, bezeichnung, url, alt)}
             />
         ));
     }
