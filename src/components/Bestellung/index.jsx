@@ -1,12 +1,21 @@
 import React from "react";
 import styles from './Bestellung.module.scss';
 import axios from 'axios';
+import sweetalert from 'sweetalert';
 
 function Bestellung({ id, bezeichnung, url, alt, setBestellungen }) {
 
-    const essenLoeschen = () => {
-        axios.delete(`https://6605dd29d92166b2e3c2ec69.mockapi.io/menue/${id}`);
-        setBestellungen(prev => prev.filter(item => Number(item.id) !== Number(id)));
+    const essenLoeschen = async () => {
+        try {
+            await axios.delete(`https://6605dd29d92166b2e3c2ec69.mockapi.io/menue/${id}`);
+            setBestellungen(prev => prev.filter(item => Number(item.id) !== Number(id)));
+        } catch (error) {
+            sweetalert({
+                title: "Löschen nicht geklappt...",
+                icon: "error",
+            });
+            console.error(error);
+        }
     }
 
     return (

@@ -17,7 +17,7 @@ function App() {
   React.useEffect(() => {
     try {
       async function fetchData() {
-        const itemsResponse = axios.get('https://6605dd29d92166b2e3c2ec69.mockapi.io/menue');
+        const itemsResponse = await axios.get('https://6605dd29d92166b2e3c2ec69.mockapi.io/menue');
         setBestellungen((await itemsResponse).data)
         setItems(data);
       }
@@ -53,6 +53,7 @@ function App() {
               icon: "success",
             });
             axios.post('https://6605dd29d92166b2e3c2ec69.mockapi.io/menue', menue);
+            setBestellungen(prev => [...prev, menue]);
           }
         });
       }

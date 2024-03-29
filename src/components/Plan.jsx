@@ -17,6 +17,7 @@ function Plan({ bestellungen, setBestellungen }) {
 
     return (
         <div className="items">
+            {/* <h1>Menüplan der Woche</h1> */}
             {renderItems()}
         </div>
     );
