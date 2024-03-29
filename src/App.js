@@ -62,10 +62,6 @@ function App() {
     }
   }
 
-  const getItems = () => {
-    
-  }
-
   return (
     <div>
       <Header
