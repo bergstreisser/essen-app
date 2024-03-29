@@ -1,7 +1,7 @@
 import React from 'react';
 import Essenkarte from './Essenkarte';
 
-function Content({ items, selectDate, selectBezeichnung }) {
+function Content({ items, essenBuchen }) {
 
     const renderItems = () => {
         return items.map((item, index) => (
@@ -10,8 +10,7 @@ function Content({ items, selectDate, selectBezeichnung }) {
                 beschreibung={item.beschreibung}
                 url={item.url}
                 alt={item.alt}
-                setDate={(obj) => selectDate(obj)}
-                setBezeichnung={(bez) => selectBezeichnung(bez)}
+                buchen={(dateObj, item) => essenBuchen(dateObj, item)}
             />
         ));
     }
