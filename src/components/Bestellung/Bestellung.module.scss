@@ -5,6 +5,7 @@
     margin-bottom: 5px;
     margin-left: 30px;
     width: 155px;
+    height: 235px;
     border-radius: 7px;
     transition: box-shadow 0.2s ease-in-out, transform 0.2 ease-in-out;
 
@@ -25,39 +26,35 @@
 
 .image {
     border-radius: 4px;
-    cursor: pointer;
 }
 
 .buchen {
     display: flex;
     justify-content: space-between;
+
+    p {
+        margin-top: -5px;
+    }
+}
+
+.bezeichnung {
+    p {
+        border: 1px solid #73453ee1;
+        border-radius: 3px;
+        font-size: small;
+        text-align: center;
+        margin-top: 0%;
+    }
 }
 
 .add {
     margin-right: 10px;
-    margin-top: 10px;
+    margin-top: -10px;
     width: 27px;
     height: 27px;
     cursor: pointer;
 }
 
-.calendar {
-    text-align: center;
-    max-height: max-content;
-    max-width: 100%;
-    background: white;
-
-    button {
-        margin-top: 9.2px;
-        font-size: 15px;
-        border: none;
-        background: none;
-    }
-
-    button:enabled:hover {
-        cursor: pointer;
-    }
-}
 
 
   

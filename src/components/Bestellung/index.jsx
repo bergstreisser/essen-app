@@ -3,7 +3,7 @@ import styles from './Bestellung.module.scss';
 import axios from 'axios';
 import sweetalert from 'sweetalert';
 
-function Bestellung({ id, bezeichnung, url, alt, setBestellungen }) {
+function Bestellung({ id, bezeichnung, url, alt, setBestellungen, datum }) {
 
     const essenLoeschen = async () => {
         try {
@@ -20,8 +20,9 @@ function Bestellung({ id, bezeichnung, url, alt, setBestellungen }) {
 
     return (
         <div className={styles.essenkarte}>
-            <div>
+            <div className={styles.bezeichnung}>
                 <img className={styles.image} src={url} width={155} height={135} alt={alt} />
+                <p>{"» " + datum + " «"}</p>
                 <h4><u>{bezeichnung}</u></h4>
             </div>
             <div className={styles.buchen}>

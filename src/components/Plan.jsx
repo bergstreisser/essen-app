@@ -10,6 +10,7 @@ function Plan({ bestellungen, setBestellungen }) {
                 url={item.url}
                 alt={item.alt}
                 id={item.id}
+                datum={item.datum}
                 setBestellungen={setBestellungen}
             />
         ));
