@@ -33,7 +33,7 @@ function App() {
       const datum = moment(dateObj).local('de').format('DD MMM YYYY');
       const heute = moment(new Date()).local('de').format('DD MMM YYYY');
 
-      if (datum < heute) {
+      if ((heute - datum) >= 0) {
         sweetalert({
           title: "Buchung nicht möglich!",
           text: "Bitte ein Datum in der Zukunft wählen!",
