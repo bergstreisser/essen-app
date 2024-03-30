@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/essen-app/static/css/main.2cb232f5.css",
-    "main.js": "/essen-app/static/js/main.2e23e14b.js",
+    "main.js": "/essen-app/static/js/main.d2ee617c.js",
     "index.html": "/essen-app/index.html",
     "main.2cb232f5.css.map": "/essen-app/static/css/main.2cb232f5.css.map",
-    "main.2e23e14b.js.map": "/essen-app/static/js/main.2e23e14b.js.map"
+    "main.d2ee617c.js.map": "/essen-app/static/js/main.d2ee617c.js.map"
   },
   "entrypoints": [
     "static/css/main.2cb232f5.css",
-    "static/js/main.2e23e14b.js"
+    "static/js/main.d2ee617c.js"
   ]
 }
