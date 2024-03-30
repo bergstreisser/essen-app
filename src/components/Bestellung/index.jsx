@@ -27,8 +27,13 @@ function Bestellung({ id, bezeichnung, url, alt, setBestellungen, datum, name })
     }
 
     const loeschen = async () => {
-        await axios.delete(`https://6605dd29d92166b2e3c2ec69.mockapi.io/menue/${id}`);
-        setBestellungen(prev => prev.filter(item => Number(item.id) !== Number(id)));
+        try {
+            await axios.delete(`https://6605dd29d92166b2e3c2ec69.mockapi.io/menue/${id}`);
+            setBestellungen(prev => prev.filter(item => Number(item.id) !== Number(id)));
+        } catch (error) {
+            sweetalert('Löschen nicht geklappt...');
+            console.error(error);
+        }
     }
 
     return (
