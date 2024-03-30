@@ -53,7 +53,7 @@ function App() {
               content: "input",
               icon: "success",
             }).then(name => {
-              if (name === "David" || name === "Irene" || name === "Nicole" || name === "Eirc" || name === "Maren" || name === "Leon" || name === "Gast") {
+              if (name === "David" || name === "Irene" || name === "Nicole" || name === "Eric" || name === "Maren" || name === "Leon" || name === "Gast") {
                 const menue = { datum, bezeichnung, url, alt, name };
                 axios.post('https://6605dd29d92166b2e3c2ec69.mockapi.io/menue', menue);
                 setBestellungen(prev => [...prev, menue]);
