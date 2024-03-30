@@ -47,7 +47,7 @@ function Essenkarte({ bezeichnung, beschreibung, url, alt, buchen }) {
             </div>
             <div className={styles.buchen}>
                 <p>Essen buchen:</p>
-                <img onClick={changeVisibility} className={styles.add} src="/img/add.png" alt="add" />
+                <img onClick={changeVisibility} className={styles.add} src="img/add.png" alt="add" />
             </div>
         </div>
 

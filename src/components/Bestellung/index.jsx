@@ -28,7 +28,7 @@ function Bestellung({ id, bezeichnung, url, alt, setBestellungen, datum, name })
             </div>
             <div className={styles.buchen}>
                 <p>Essen löschen:</p>
-                <img onClick={essenLoeschen} className={styles.add} src="/img/add.png" alt="add" />
+                <img onClick={essenLoeschen} className={styles.add} src="img/add.png" alt="add" />
             </div>
         </div>
 

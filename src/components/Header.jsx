@@ -15,7 +15,7 @@ function Header(props) {
     return (
         <header>
             <div className="welcome">
-                <img onClick={changeVisibility} className="logo" src="/img/logo.png" alt="Logo" />
+                <img onClick={changeVisibility} className="logo" src="img/logo.png" alt="Logo" />
                 <h1>Menü-planer</h1>
             </div>
         </header>
