@@ -11,6 +11,7 @@ function Plan({ bestellungen, setBestellungen }) {
                 alt={item.alt}
                 id={item.id}
                 datum={item.datum}
+                name={item.name}
                 setBestellungen={setBestellungen}
             />
         ));

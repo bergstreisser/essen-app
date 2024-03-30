@@ -32,7 +32,6 @@ function App() {
     try {
       const datum = moment(dateObj).local('de').format('DD MMM YYYY');
       const heute = moment(new Date()).local('de').format('DD MMM YYYY');
-      const menue = { datum, bezeichnung, url, alt };
 
       if (datum < heute) {
         sweetalert({
@@ -49,11 +48,22 @@ function App() {
           dangerMode: true,
         }).then((willDelete) => {
           if (willDelete) {
-            sweetalert(bezeichnung + " für den " + datum + " gebucht", {
+            sweetalert({
+              text: "Für wen soll das Menü »" + bezeichnung + "« gebucht werden?",
+              content: "input",
               icon: "success",
+            }).then(name => {
+              if (name === "David" || name === "Irene" || name === "Nicole") {
+                const menue = { datum, bezeichnung, url, alt, name };
+                axios.post('https://6605dd29d92166b2e3c2ec69.mockapi.io/menue', menue);
+                setBestellungen(prev => [...prev, menue]);
+              } else {
+                sweetalert({
+                  text: "Menü konnte nicht gebucht werden!",
+                  icon: "error",
+                })
+              }
             });
-            axios.post('https://6605dd29d92166b2e3c2ec69.mockapi.io/menue', menue);
-            setBestellungen(prev => [...prev, menue]);
           }
         });
       }
