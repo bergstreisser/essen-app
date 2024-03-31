@@ -19,8 +19,7 @@ function Plan({ bestellungen, setBestellungen }) {
 
     return (
         <div className="items">
-            {/* <h1>Menüplan der Woche</h1> */}
-            {renderItems()}
+            {bestellungen.length > 0 ? renderItems() : <h3>Keine Buchungen vorhanden...</h3>}
         </div>
     );
 }

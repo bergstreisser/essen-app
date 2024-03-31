@@ -19,8 +19,8 @@ function Bestellung({ id, bezeichnung, url, alt, setBestellungen, datum, name })
             });
         } catch (error) {
             sweetalert({
-                title: "Löschen nicht geklappt...",
-                icon: "error",
+                text: "Löschen nicht geklappt...",
+                icon: "error"
             });
             console.error(error);
         }
@@ -31,7 +31,10 @@ function Bestellung({ id, bezeichnung, url, alt, setBestellungen, datum, name })
             await axios.delete(`https://6605dd29d92166b2e3c2ec69.mockapi.io/menue/${id}`);
             setBestellungen(prev => prev.filter(item => Number(item.id) !== Number(id)));
         } catch (error) {
-            sweetalert('Löschen nicht geklappt...');
+            sweetalert({
+                text: "Löschen nicht geklappt...",
+                icon: "error"
+            });
             console.error(error);
         }
     }
@@ -49,8 +52,6 @@ function Bestellung({ id, bezeichnung, url, alt, setBestellungen, datum, name })
                 <img onClick={essenLoeschen} className={styles.add} src="img/add.png" alt="add" />
             </div>
         </div>
-
-
     );
 }
 
