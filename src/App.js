@@ -31,14 +31,13 @@ function App() {
   const essenBuchen = (dateObj, bezeichnung, url, alt) => {
     try {
       const datum = moment(dateObj).local('de').format('DD MMM YYYY');
-      const heute = moment(new Date()).local('de').format('DD MMM YYYY');
 
-      if ((heute - datum) >= 0) {
+      if ((new Date().getTime() - dateObj.getTime()) > 0) {
         sweetalert({
           title: "Buchung nicht möglich!",
           text: "Bitte ein Datum in der Zukunft wählen!",
           icon: "error",
-      });
+        });
       } else {
         sweetalert({
           title: "»" + bezeichnung + "« buchen?",
@@ -68,7 +67,10 @@ function App() {
         });
       }
     } catch (error) {
-      sweetalert('Buchung nicht geklappt...');
+      sweetalert({
+        title: "Buchung nicht geklappt...",
+        icon: "error",
+      });
       console.error(error);
     }
   }
